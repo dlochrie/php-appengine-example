@@ -1,0 +1,32 @@
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-9" ui-view></div>
+    <div class="col-md-3">
+      <!-- Side Menu Goes Here -->
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title">Menu</h3>
+        </div>
+        <div class="list-group">
+          <a class="list-group-item" ui-sref-active="active"
+              ng-repeat="category in galleryCtrl.availableCategories"
+              ui-sref="gallery.show({ galleryId: category.title })"
+              >{{ category.title }}</a>
+        </div>
+      </div>
+      <!-- Social Media Menu Goes Here -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Follow Me</h3>
+        </div>
+        <div class="list-group">
+          <a href="#" class="list-group-item">Google+</a>
+          <a href="#" class="list-group-item">Facebook</a>
+          <a href="#" class="list-group-item">Twitter</a>
+          <a href="#" class="list-group-item">Pinterest</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

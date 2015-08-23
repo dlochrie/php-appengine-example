@@ -1,0 +1,24 @@
+{
+  "name": "photogallery",
+  "version": "0.0.0",
+  "authors": [
+    "Daniel Lochrie <dclochri@gmail.com>"
+  ],
+  "main": "bin/www",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "closure-compiler": "google/closure-compiler",
+    "closure-library": "google/closure-library"
+  }
+}

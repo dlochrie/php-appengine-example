@@ -1,0 +1,59 @@
+.message-wrapper {
+  min-height: 81px;
+  width: 100%;
+}
+
+.message-wrapper div,
+.message-wrapper span {
+  height: 81px;
+  margin: 0;
+  padding: 0;
+}
+
+.message-btn,
+.message-text-wrapper {
+  display: inline-block;
+  float: left;
+  position: relative;
+}
+
+.message-btn { width: 40%; }
+
+.message-btn .btn { margin-left: 110px; }
+
+.message-text-wrapper { width: 60%; }
+
+.message-callout {
+  left: 0;
+  position: absolute;
+  width: 99px;
+  z-index: 5;
+}
+
+.message-body {
+  left: 96px;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+
+.message-callout img {
+  margin: 0;
+  padding: 0;
+  width: 99px;
+}
+
+.message-body textarea {
+  height: 100%;
+  width: 100%;
+}
+
+/** When collapsed position the button under the text. */
+@media(max-width:767px) {
+  .message-wrapper { min-height: 125px; }
+  .message-btn { width: 100%; }
+  .message-btn .btn {
+    margin: 20px 0 0 5px;
+    width: 75px;
+  }
+}
