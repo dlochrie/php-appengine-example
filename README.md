@@ -20,10 +20,15 @@ Nothing. Nothing at all.
 ???
 
 ## On Linux
-```
-/path/to/dev_appserver.py --php_executable_path=/path/to/php-cgi path-to-this-application/
-```
 
-For example:  
+**Note**: On Linux, if you are using more than one App Engine SDKs,
+(for example, you have both the PHP and Go SDKs) then you  need to specify
+the path `dev_appserver.py` in the PHP SDK.
+
+The command looks like:
+    /path/to/dev_appserver.py --php_executable_path=/path/to/php-cgi path-to-this-application/
+
+
+For example:
 
     /usr/local/lib/php_appengine/dev_appserver.py --php_executable_path=/usr/bin/php-cgi php-appengine-example/
