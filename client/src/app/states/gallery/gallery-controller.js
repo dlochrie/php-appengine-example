@@ -85,7 +85,13 @@ photogallery.gallery.galleryController.DEFAULT_GALLERIES_ = {
     title: 'My Favorite Swimming Hole',
     url: 'http://goo.gl/zTJPBK'
   }],
-  Cityscapes: [{}, {}, {}],
+  Cityscapes: [{
+    title: 'Panama City',
+    url: 'http://goo.gl/TjJ4L1',
+  }, {
+    title: 'London',
+    url: 'http://7-themes.com/data_images/out/57/6964571-hd-wallpaper-city.jpg',
+  }, {}],
   Nature: [{
     title: 'Petting Zoo',
     url: 'http://goo.gl/toF9iD'
