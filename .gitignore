@@ -34,3 +34,6 @@ public/javascripts/application.js.map
 
 # Directories for generated code (currently just template-cache.js)
 generated
+
+# Make sure NOT to check in the app.yaml file, which is unique to each install.
+app.yaml
