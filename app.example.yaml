@@ -19,13 +19,23 @@ handlers:
 - url: /.*
   script: index.php
 
+# Skip the following files/directories in deployments.
+# See: http://stackoverflow.com/a/8889234/1058612.
+# Also, run "appcfg.py update ./ -v" in the root to see more verbose deployment
+# details, which also shows the files/directories that you are skipping here.
+# Very useful to see what files you are NOT uploading to the server.
 skip_files:
-- ^(.*/)?.*/bin/.*$
-- ^(.*/)?.*/bower_components/closure-compiler/.*$
-- ^(.*/)?.*/coverage/.*$
-- ^(.*/)?.*/confs/.*$
-- ^(.*/)?.*/grunt/.*$
-- ^(.*/)?.*/node_modules/.*$
-- ^(.*/)?.*/.*data
-- ^(.*/)?.*/.*gitkeep
-- ^(.*/)?.*/.*less
+# Skip unnecessary files and configs.
+- ^(.*/)?.*bower.json
+- ^(.*/)?.*data
+- ^(.*/)?.*gitignore
+- ^(.*/)?.*gitkeep
+- ^(.*/)?.*less
+- ^(.*/)?.*README.md
+- ^(.*/)?.*package.json
+
+# Skip the following directories entirely, including Git directories.
+- ^(.git/.*)
+- ^(bin/.*)
+- ^(bower_components/closure-compiler/.*)
+- ^(node_modules/.*)
