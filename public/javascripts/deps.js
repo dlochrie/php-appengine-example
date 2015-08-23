@@ -12,4 +12,3 @@ goog.addDependency('../../app/states/gallery/gallery.js', ['photogallery.gallery
 goog.addDependency('../../app/states/home/home-config.js', ['photogallery.home.config'], [], false);
 goog.addDependency('../../app/states/home/home-controller.js', ['photogallery.home.HomeController'], [], false);
 goog.addDependency('../../app/states/home/home.js', ['photogallery.home.module'], ['photogallery.home.HomeController', 'photogallery.home.config'], false);
-goog.addDependency('../../template-cache/generated/template-cache.js', ['photogallery.templates'], [], false);
